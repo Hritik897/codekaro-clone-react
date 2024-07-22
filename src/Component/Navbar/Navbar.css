@@ -1,0 +1,38 @@
+.navbar{
+    /* border: 1px solid rgb(212, 18, 18); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+padding: .5% 10%;
+
+}
+.navbar_left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+
+}
+.navbar_left h1{
+    font-size: 22px;
+}
+Link{
+    text-decoration: none;
+    color: black;
+}
+ 
+.navbtn{
+    color: grey;
+    font-weight: 16px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.loginbtn{
+    border:1px solid black;
+    padding: 7px 20px;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    margin-left: 10px;
+}

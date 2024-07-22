@@ -1,0 +1,38 @@
+.freecourse{
+margin-top: 60px;
+}
+
+.freecourse h1{
+text-align: center;
+font-size: 38px;
+font-weight: 600;
+}
+.para{
+    text-align: center;
+font-size: 18px;
+color: gray;
+}
+
+.card{
+    border: 1px solid none;
+    height:50vh;
+    width: 25vw; 
+    border-radius: 16px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+transform: translate(-50%, -50%);
+box-shadow: 7px 7px 10px rgb(202, 202, 202);
+    
+}
+
+.card img{
+    width:100%;
+    border-radius: 16px 16px 0 0 ;
+
+}
+
+.card-content{
+padding: 10px 20px ;
+}
+ 
