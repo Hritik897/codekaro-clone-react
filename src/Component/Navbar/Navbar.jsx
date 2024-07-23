@@ -10,6 +10,7 @@ const  handleClick = ()=>{
      setClick(true)
 }
 
+ 
 const  handleCancel = ()=>{
   setClick(false)
 }
@@ -34,7 +35,7 @@ color:'black' , textDecoration:'none'
 
         <div className='navbar_right'>
           <Link to='/' className='navbtn' onClick={handleClick}>Register </Link>
-          <Link to='/' className='loginbtn'>Login  </Link>
+          <Link to='/' className='loginbtn' onClick={handleClick}>Login  </Link>
         </div>
       </div>
       {click ? <Loginform onCancel={handleCancel}/> : null  }
