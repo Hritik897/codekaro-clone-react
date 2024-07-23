@@ -1,7 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
+import Loginform from '../Loginform/Loginform'
 const Navbar = () => {
+
+  const [click,setClick] = useState(false)
+
+const  handleClick = ()=>{
+     setClick(true)
+}
+
+const  handleCancel = ()=>{
+  setClick(false)
+}
+
+
   const style = {
 color:'black' , textDecoration:'none'
   }
@@ -20,13 +33,13 @@ color:'black' , textDecoration:'none'
         </div>
 
         <div className='navbar_right'>
-          <Link to='/' className='navbtn' >Register </Link>
+          <Link to='/' className='navbtn' onClick={handleClick}>Register </Link>
           <Link to='/' className='loginbtn'>Login  </Link>
         </div>
       </div>
-
-
+      {click ? <Loginform onCancel={handleCancel}/> : null  }
     </>
+
 
 
 
